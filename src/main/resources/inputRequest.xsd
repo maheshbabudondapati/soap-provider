@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.mahesh.com/spring/soap/api/inputRequest"
+            xmlns:tns="http://www.mahesh.com/spring/soap/api/inputRequest"
+            elementFormDefault="qualified">
+
+    <xsd:element name="SoapRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="message" type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Acknowledgement">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="resultcode" type="xsd:int" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
